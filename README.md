@@ -3,8 +3,7 @@
    <link href="./date-picker.css">
 </head>
 <body>
-   ...
-   <input id="date-picker-input"></input>
+   <input id="date-picker-input">
    <script src="./date-picker.js"></script>
    <script>
       datePicker.init("date-picker-input")
