@@ -1,4 +1,4 @@
-```
+```html
 <head>
    <link href="./date-picker.css">
 </head>
