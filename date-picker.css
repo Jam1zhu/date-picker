@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+#date-picker-wrapper {
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transform: scale(0);
+    transform-origin: top left;
+    transition: all 200ms ease-in-out;
+
+    overflow: hidden;
+    width: 300px;
+    -webkit-box-shadow: 8px 10px 10px rgba(100, 100, 100, .5);
+    -moz-box-shadow: 8px 10px 10px rgba(100, 100, 100, .5);
+    box-shadow: 8px 10px 10px rgba(100, 100, 100, .5);
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+#date-picker-wrapper.picker-show {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    transform: scale(1);
+}
+
+#date-picker-wrapper .date-picker-ui-header {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+#date-picker-wrapper .date-picker-ui-header span {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#date-picker-wrapper .date-picker-ui-header .date-picker-ui-btn-hidden {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background: #75c5dd;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 50%;
+    color: white;
+}
+
+#date-picker-wrapper .date-picker-ui-header .date-picker-ui-btn {
+    position: absolute;
+    text-decoration: none;
+    color: #75c5dd;
+}
+
+#date-picker-wrapper .date-picker-ui-header .date-picker-ui-prev {
+    left: 10px;
+}
+
+#date-picker-wrapper .date-picker-ui-header .date-picker-ui-next {
+    right: 10px;
+}
+
+#date-picker-wrapper .date-picker-ui-body table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#date-picker-wrapper .date-picker-ui-body th {
+    line-height: 2;
+}
+
+#date-picker-wrapper .date-picker-ui-body td {
+    box-sizing: border-box;
+    height: 20px;
+    line-height: 2;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: #efefef;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+#date-picker-wrapper .date-picker-ui-body td.currentMonth {
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+#date-picker-wrapper .date-picker-ui-body td.currentMonth:hover {
+    background: #75c5dd;
+    color: white;
+}

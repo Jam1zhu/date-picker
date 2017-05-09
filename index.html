@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DatePicker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="./date-picker.css">
+    <style>
+        #date-picker-input {
+            width: 300px;
+            margin-left: 300px;
+            margin-top: 300px;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #ddd;
+            display: inline-block;
+        }
+
+        #date-picker-input:focus {
+            border: 0;
+            outline-color: #75c5dd;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<input id="date-picker-input">
+<script src="./date-picker.js" charset="UTF-8"></script>
+<script>
+    datePicker.init("date-picker-input")
+</script>
+</body>
+</html>
