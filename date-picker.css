@@ -27,6 +27,8 @@
 }
 
 #date-picker-wrapper .date-picker-ui-header {
+    box-sizing: border-box;
+    height:45px;
     font-size: 16px;
     padding: 10px 0;
     width: 100%;
@@ -35,16 +37,17 @@
 }
 
 #date-picker-wrapper .date-picker-ui-header span {
-    vertical-align: middle;
     display: inline-block;
     width: 100%;
+    height:22px;
+    line-height: 22px;
     text-align: center;
 }
 
 #date-picker-wrapper .date-picker-ui-header .date-picker-ui-btn-hidden {
     position: absolute;
     right: 40px;
-    top: 10px;
+    top: 14px;
     display: block;
     width: 16px;
     height: 16px;
@@ -55,12 +58,16 @@
     line-height: 16px;
     border-radius: 50%;
     color: white;
+    cursor: pointer;
 }
 
 #date-picker-wrapper .date-picker-ui-header .date-picker-ui-btn {
     position: absolute;
     text-decoration: none;
     color: #75c5dd;
+    top:10px;
+    height:22px;
+    line-height: 22px;
 }
 
 #date-picker-wrapper .date-picker-ui-header .date-picker-ui-prev {
